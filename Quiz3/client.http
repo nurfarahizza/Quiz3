@@ -2,15 +2,23 @@ GET http://localhost:3000
 
 ###
 
-GET http://localhost:3000/bye
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "nurul",
+    "password": "12345678"
+}
 
 ###
 
-POST http://localhost:3000/login
+POST http://localhost:3000/register
 Content-Type: application/json 
 //header : what is the content type
 
 {
-    "username": "farah",
-    "password": "password"
+    "username": "nurul",
+    "password": "12345678",
+    "name": "farahhh",
+    "email": "farah067@gmail.com"
 }
